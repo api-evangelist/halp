@@ -1,7 +1,27 @@
 aid: halp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/halp.png
 name: Halp
-description: Halp is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Halp was a conversational ticketing and help-desk tool that let teams turn
+  Slack and Microsoft Teams messages into trackable tickets, founded in Boulder,
+  Colorado and backed by Techstars. Atlassian acquired Halp in February 2020 and
+  folded its capabilities into Jira Service Management; the standalone Halp
+  product and its API were subsequently discontinued. The halp.com domain now
+  resolves to Atlassian and is served from Atlassian's edge, so no independent
+  Halp developer portal, API reference, SDKs, or MCP surface remains to enrich.
+  This profile records the company's history and the (Atlassian-operated)
+  security posture still observable on the halp.com domain.
 url: https://raw.githubusercontent.com/api-evangelist/halp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,21 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: atlassian
+x-acquired-date: '2020-02-01'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Help Desk
+- Ticketing
+- Customer Support
+- Slack
+- Microsoft Teams
+- Conversational
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/halp-domain-security.yml
+- type: WellKnown
+  url: well-known/halp-well-known.yml
+- type: SecurityTxt
+  url: well-known/halp-security.txt
 - type: Website
   url: https://halp.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
