@@ -2,21 +2,26 @@ generated: '2026-07-19'
 method: searched
 source: live probe of https://halp.com/.well-known/*
 host: https://halp.com
-note: >-
-  halp.com is now an Atlassian-owned redirect domain (Halp was acquired by
-  Atlassian in 2020 and folded into Jira Service Management). The domain is
-  served by AtlassianEdge/CloudFront and the security.txt below is Atlassian's
-  canonical corporate file (Canonical: https://www.atlassian.com/.well-known/security.txt),
-  not a Halp-specific document.
-documents:
-- path: /.well-known/security.txt
-  status: 200
-  file: halp-security.txt
-- path: /.well-known/openid-configuration
-  status: 301
-- path: /.well-known/oauth-authorization-server
-  status: 301
-- path: /.well-known/api-catalog
-  status: 301
-- path: /.well-known/ai-plugin.json
-  status: 301
+note: 'halp.com is now an Atlassian-owned redirect domain (Halp was acquired by Atlassian in 2020 and
+  folded into Jira Service Management). The domain is served by AtlassianEdge/CloudFront and the security.txt
+  below is Atlassian''s canonical corporate file (Canonical: https://www.atlassian.com/.well-known/security.txt),
+  not a Halp-specific document.'
+hosts:
+- host: https://halp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: halp-security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
