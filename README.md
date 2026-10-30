@@ -64,6 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Halp is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: techstars — https://halp.com/
+Halp was a conversational ticketing and help-desk tool that let teams turn Slack and Microsoft Teams messages into trackable tickets, founded in Boulder, Colorado and backed by Techstars. Atlassian acquired Halp in February 2020 and folded its capabilities into Jira Service Management; the standalone Halp product and its API were subsequently discontinued. The halp.com domain now resolves to Atlassian and is served from Atlassian's edge, so no independent Halp developer portal, API reference, SDKs, or MCP surface remains to enrich. This profile records the company's history and the (Atlassian-operated) security posture still observable on the halp.com domain.
+
+**Areas:** Company · Help Desk · Ticketing · Customer Service · Slack · Microsoft Teams · Acquired
+
+## Halp on APIs.io (historical record)
+
+Everything profiled for Halp is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/halp/](https://apis.io/providers/halp/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Halp Domain Security](https://apis.io/security/halp/halp-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://halp.com/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Halp: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/halp/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
